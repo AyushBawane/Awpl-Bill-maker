@@ -1,0 +1,1671 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <title>Awpl- Bill Maker</title>
+</head>
+<body> 
+  <nav class="navbar navbar-expand-md navbar-dark  bg-primary">
+    <a class="navbar-brand" href="#">Awpl- Bill Maker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="nav">
+        <li class="nav-item">
+          <button id="allProducts" class="nav-link">All</button>
+        </li>
+        <li class="nav-item">
+          <button id="wellnessP" class="nav-link" href="#WELLNESS">Wellness</button>
+        </li>
+        <li class="nav-item">
+          <button id="beautyP" class="nav-link" href="#BEAUTY">Beauty</button>
+        </li>
+        <li class="nav-item">
+          <button id="hairP" class="nav-link" href="#HAIR">Hair</button>
+        </li>
+        <li class="nav-item">
+          <button id="oralP" class="nav-link" href="#ORAL">Oral</button>
+        </li>
+        <li class="nav-item">
+          <button id="foodP" class="nav-link" href="#FOOD">Food</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="search-box">
+    <div class="mx-auto " style="width:245px">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control searchBox" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div> 
+
+  <button type="button" onclick="genBill()" class="btn btn-primary sticky-top float-right mx-5" data-toggle="modal" data-target="#staticBackdrop">
+    Print Bill
+  </button>
+
+  <div class="wellnessProducts">
+    <div class="container-lg d-flex justify-content-center flex-wrap">
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/sanitary-pad.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Free You ANION SANITARY PAD</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">138</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">115</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">0.50</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 10 pc.
+            </p>
+          </div>
+          <button type="button" id="0 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/gino-doc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Genodoc Wash</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">238</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">198</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 ml
+            </p>
+          </div>
+          <button type="button" id="1 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/veindoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Veindoc Oil</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">263</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 219</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 25 ml
+            </p>
+          </div>
+          <button type="button" id="2 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/ehe-h-doc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">H Doc Hand Sanitizer</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">250</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 232</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">0.25</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="3 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/ayush-kwath-powder.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Ayush Kwath</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">289 </span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">241</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 Gm
+            </p>
+          </div>
+          <button type="button" id="4 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Joint-Curator-Oil.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Joint Curator Oil</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">394</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">328 </span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 ml
+            </p>
+          </div>
+          <button type="button" id="5 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Panch-Tulsi.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title"> EXE PANCH TULSI OIL</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">414</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">345</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 25 ml
+            </p>
+          </div>
+          <button type="button" id="6 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/jc-gel.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE JC OINT</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">427</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">356</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 gm
+            </p>
+          </div>
+          <button type="button" id="7 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Herbal-Tea.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Herbal Green Tea </h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">444</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">370</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2 </span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 gm
+            </p>
+          </div>
+          <button type="button" id="8 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/adidoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">ADIDOC Drop</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">450</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 375</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 25 ml
+            </p>
+          </div>
+          <button type="button" id="9 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/triphala-ras.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Triphala Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">461</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">384</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="10 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/coughdoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Coughdoc Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">495</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 412</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 200 ml
+            </p>
+          </div>
+          <button type="button" id="11" onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/exe-herbal-mehandi.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE Herbal Mehandi</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">474</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">395</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 200 gm
+            </p>
+          </div>
+          <button type="button" id="12" onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Prodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Prodoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">641</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 534</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">3 </span>
+            </p>
+
+            <p class="qty">
+              Qty. : 200 gm
+            </p>
+          </div>
+          <button type="button" id="13 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/exe-wheet-grass.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Exe Wheat Grass Powder</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">624</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">520</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">3</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 gm
+            </p>
+          </div>
+          <button type="button" id="14 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/bton-gel.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE B-TON OINT</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">714</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">595</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">3</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 gm
+            </p>
+          </div>
+          <button type="button" id="15 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/VIRALDOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">VIRALDOC</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">706</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">588</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">3</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="16 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Kidgdog.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Kidgdoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">816</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">680</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">4</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 250 gm
+            </p>
+          </div>
+          <button type="button" id="17 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Aloevera.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Aloevera Juice</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1001</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">834</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">5</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="18 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/prassdoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Prassdoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1142</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">952</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 gm
+            </p>
+          </div>
+          <button type="button" id="19 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/alrgydoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Alrgydoc Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1282</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1068</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">7</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="20 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/braindoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Braindoc Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1361</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1135</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">7</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="21 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Gynedoc-rasd.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">GYNEDOC</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1474</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1229</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">8</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="22 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Diabodoc-box.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Daibodoc Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1492</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1243</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">8</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="23 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Livodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Livodoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1528</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 1273</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">8</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="24 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/IMMUNODOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">IMMUNODOC</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2116</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1763</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">12</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="25 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/FEVOODOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">FEVODOC PRAVAHI KWATH</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2195</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">829</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">12</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="26 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Orthodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">ORTHODOC PRAVAHI KWATH</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2299</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1916</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">13</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="27 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/cardiodoc-ras.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cardiodoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2314</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1928</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">13</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="28 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/THUNDER.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Thunder Blast</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2292</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1910</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">13</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="29 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Pilodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pilodoc Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2476</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">2063</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">13</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="30 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Stondoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Stondoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2582</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">2152</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">14</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="31 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Thyrodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">THYDOC PRAVAHI KWATH</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2509</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">2091</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">13</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="32 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Chlorodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chlorodoc Ras</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2509</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">2091</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">13</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="33 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="wellness/Obeodoc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Obeodoc</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">2627</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">2189</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">15</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="34 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="beautyProducts">
+
+    <div class="container-lg d-flex justify-content-center flex-wrap">
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="beauty/aloevera-cucumber-cream.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE ALOEVERA CUCUMBER CREAM</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">239</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">199</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 gm
+            </p>
+          </div>
+          <button type="button" id="35 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="beauty/exe-herbal-facewash.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE HERBAL FACE WASH</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">248</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">207</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 ml
+            </p>
+          </div>
+          <button type="button" id="36 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="beauty/herbal-face-pack.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE HERBAL FACE PACK CREAM</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">251</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">209</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 gm
+            </p>
+          </div>
+          <button type="button" id="37 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="beauty/herbal-face-scrub.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE HERBAL FACE SCRUB CREAM</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">251</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">209</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 gm
+            </p>
+          </div>
+          <button type="button" id="38 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="beauty/aloevera-saffron-gel.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE ALOEVERA SAFFRON OINT</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">259</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">216</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 gm
+            </p>
+          </div>
+          <button type="button" id="39 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="beauty/heal-doc-cream.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE HEAL DOC CREAM</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">268</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">223</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 gm
+            </p>
+          </div>
+          <button type="button" id="40 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hairProducts">
+    <div class="container-lg d-flex justify-content-center flex-wrap ">
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="hair/exe-hair-cleanger.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE HAIR CLEANSER</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">242</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">202</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 ml
+            </p>
+          </div>
+          <button type="button" id="41 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="hair/Hair-Doc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">HAIR DOC</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">242</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">202</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 ml
+            </p>
+          </div>
+          <button type="button" id="42 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="hair/exe-hair-c.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">EXE HAIR SHINE OINT</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">283</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">236</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 ml
+            </p>
+          </div>
+          <button type="button" id="43 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="oralProducts">
+    <div class="container-lg d-flex justify-content-center flex-wrap ">
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="img/Dento-Doc.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">DENTODOC Dental Cream</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">252</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">210</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 ml
+            </p>
+          </div>
+          <button type="button" id="44 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+ 
+  <div class="foodProducts">
+    <div class="container-lg d-flex justify-content-center flex-wrap ">
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/FENNELDOC-DROP.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">FENNELDOC Drop</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">231.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">193</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 ml
+            </p>
+          </div>
+          <button type="button" id="45 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/immunity-drop.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Immunity Drop</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">223.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">186</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">
+                1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 ml
+            </p>
+          </div>
+          <button type="button" id="46 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/DIGIDOC-POWDER.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">DIGIDOC Powder</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">239.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate"> 199</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 gm
+            </p>
+          </div>
+          <button type="button" id="47 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/giloy-juice.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Giloy Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">234.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">195</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">1</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 30 cap
+            </p>
+          </div>
+          <button type="button" id="48 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/STEVIADOC-DROP.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">STEVIADOC Drop</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">407.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">339</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 ml
+            </p>
+          </div>
+          <button type="button" id="49 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/giloy-juice.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Giloy Juice</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">434.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">362</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="50 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/FITDOC-POWDER.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">FITDOC Powder</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">486.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">405</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">2</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 gm
+            </p>
+          </div>
+          <button type="button" id="51 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/CURCIDOC-CAPSULE.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">CURCIDOC Drop</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">574.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">478</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">3</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 50 ml
+            </p>
+          </div>
+          <button type="button" id="52 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/G-COFFEEDOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">G-COFFEEDOC</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">633.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">527</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">3</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 100 gm
+            </p>
+          </div>
+          <button type="button" id="53 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/BERRYDOC-CAPSULE.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">BERRYDOC Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1121.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">934</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 30 cap
+            </p>
+          </div>
+          <button type="button" id="54 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/CURCIDOC-CAPSULE.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">CURCIDOC Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1125.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">937</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 30 cap
+            </p>
+          </div>
+          <button type="button" id="55 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/MORIDOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">MORIDOC Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1137.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">948</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 60 cap
+            </p>
+          </div>
+          <button type="button" id="56 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/OMEGADOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">OMEGADOC Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1140.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">950</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 30 cap
+            </p>
+          </div>
+          <button type="button" id="57 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/COW-C-DOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">COW-C-DOC Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1141.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">951</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. :
+            </p>
+          </div>
+          <button type="button" id="58 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/SPIRADOC-CAPSULE.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">SPIRADOC Capsule</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1146.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">955</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 60 cap
+            </p>
+          </div>
+          <button type="button" id="59 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/Noni-Juice.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Noni Juice</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1177.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">981</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">6</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="60 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/SEABUCKDOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">SEABUCKDOC Juice</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1278.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1065</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">7</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 ml
+            </p>
+          </div>
+          <button type="button" id="61 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/VITADOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">VITADOC Capsule </h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1521.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1268</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">8</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 30 cap
+            </p>
+          </div>
+          <button type="button" id="62 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/SLIMDOC-POWDER.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">SLIMDOC Powder</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1660.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1383</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">8</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 gm
+            </p>
+          </div>
+          <button type="button" id="63 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/BERRYDOC-JUICE.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">BERRYDOC Juice</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">1992.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">1660</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">11</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1000 ml
+            </p>
+          </div>
+          <button type="button" id="64 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/HEIGHTDOC-POWDER.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">HEIGHTDOC Powder</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">3203.00</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">2669</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">17</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 500 gm
+            </p>
+          </div>
+          <button type="button" id="65 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/MASSDOC-POWDER.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">MASSDOC Powder</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">4034.00 </span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">3362</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">20</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1 kg
+            </p>
+          </div>
+          <button type="button" id="66 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+      <div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="food/MUSCLEDOC.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">MUSCLEDOC</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">5238.00 </span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">4365</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">25</span>
+            </p>
+
+            <p class="qty">
+              Qty. : 1 kg
+            </p>
+          </div>
+          <button type="button" id="67 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+        </div>
+      </div>
+
+
+    </div> 
+  </div>
+ 
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal bd-example-modal-xl fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Your Product Bill</h5>
+        </div>
+        <div class="modal-body">
+          <div class="modal-dynamic">
+            <div class="row px-1 ">
+              <div class="col-6 bg-light border py-2">
+                Name
+              </div>
+              <div class="col-2 bg-light border py-2">
+                MRP
+              </div>
+              <div class="col-2 bg-light border py-2">
+                DP
+              </div>
+              <div class="col-2 bg-light border py-2">
+                SP
+              </div>
+ 
+            </div>
+          </div>
+
+          <!--<div class="total">-->
+          <!--  <div class="row px-1">-->
+          <!--    <div class="col-4">-->
+
+          <!--    </div>-->
+          <!--    <div class="col-2 bg-light border py-2">-->
+          <!--      Total-->
+          <!--    </div>-->
+          <!--    <div id="mrpcalc" class="col-2 bg-light border py-2">-->
+          <!--      <span id="mrpprint"></span>-->
+                
+          <!--    </div>-->
+          <!--    <div id="dpcalc" class="col-2 bg-light border py-2">-->
+          <!--      <span id="dpprint"></span>-->
+                
+          <!--    </div>-->
+          <!--    <div id="spcalc" class="col-2 border py-2 bg-light">-->
+          <!--      <span id="spprint"></span>-->
+                
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights">
+       <p> <span>&copy;</span> 2021 Ayush Bawane. All rights are reserved</p>
+  </div>
+
+
+
+  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

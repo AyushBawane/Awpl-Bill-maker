@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+* {
+  font-family: 'RocknRoll One', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav-link {
+  color: white;
+}
+.nav-link {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.nav-link:hover {
+  color: black;
+  border: none;
+}
+.nav {
+  position: relative;
+  right: 0;
+}
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+} 
+.copyrights{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
