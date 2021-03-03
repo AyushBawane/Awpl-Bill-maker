@@ -1,21 +1,17 @@
-// var cards = document.getElementsByClassName('mainCard');
-// //console.log(cards.length);
-// for (var i = 0; i < cards.length ; i++) {
-// var cards1 = document.getElementsByClassName('itemadd')[i];
-// var cs = cards1.getAttribute("id");
-// // console.log(cs);
-// }
 var clickedId;
-var thismrp ; 
-var thisdp ;
-var thissp ;
+var thismrp;
+var thisdp;
+var thissp;
+var thistitle;
+var thiscard;
 function getId() {
   clickedId = parseInt(event.target.id);
   //  console.log(clickedId);
+  thiscard = document.getElementsByClassName('mainCard')[clickedId].classList.add('border-primary');
   thismrp = parseInt(document.getElementsByClassName('mrp-rate')[clickedId].innerText);
   thisdp = parseInt(document.getElementsByClassName('dp-rate')[clickedId].innerText);
   thissp = parseFloat(document.getElementsByClassName('sp-count')[clickedId].innerText);
-  var thistitle = document.getElementsByClassName('card-title')[clickedId].innerText.toUpperCase();
+  thistitle = document.getElementsByClassName('card-title')[clickedId].innerText.toUpperCase();
 
   var content = `<div class="row px-1 ">
   <div class="col-6 bg-light border py-2">${thistitle}</div>
@@ -25,31 +21,70 @@ function getId() {
   </div>`;
   var appending = document.querySelector('.modal-dynamic').innerHTML = document.querySelector('.modal-dynamic').innerHTML + content;
 
-  // var total = parseInt(document.getElementById('mrpcalc').innerText);
-  // console.log(total);
-  // total.innerText = parseInt(document.getElementById('mrpcalc').innerText) + thismrp;
-  // console.log(content);
-  // console.log(thistitle);
-  // console.log(thismrp);
-  // console.log(thisdp);
-  // console.log(thissp);
-
-
-// function genBill() {
-//   var mrpres = parseInt(document.getElementsByClassName('mrpval').innerText);
-  
- // console.log(mrpres);
-  //for (var i = 0; i < mrpres.length; i++) {
-  //  var mrpres1 = parseInt(document.getElementsByClassName('mrpval')[i].innerText); 
-   // console.log(mrpres1);
-   
-   // console.log(tprice);
-    // console.log(mrpres[i].innerText);
-
-    // var totalmrp = parseInt(mrpres[i].innerText) + parseInt(totalmrp) ;
-  //}
 
 }
+
+var mrparr = [];
+var dparr = [];
+var sparr = [];
+var gettotal = document.getElementById('printBill');
+gettotal.addEventListener('click', ()=> {
+  var getmrp = document.getElementsByClassName('mrpval');
+  var getdp = document.getElementsByClassName('dpval');
+  var getsp = document.getElementsByClassName('spval');
+  for (var i = 0; i < getmrp.length; i++) {
+    var mrppush = parseInt(getmrp[i].innerText);
+    var dppush = parseInt(getdp[i].innerText);
+    var sppush = parseFloat(getsp[i].innerText);
+    // console.log(mrppush);
+    mrparr.push(mrppush);
+    dparr.push(dppush);
+    sparr.push(sppush);
+  }
+  var totalmrp = mrparr.reduce((a, b)=> {
+    return a + b;
+  }, 0);
+  var totaldp = dparr.reduce((a, b)=> {
+    return a + b;
+  }, 0);
+  var totalsp = sparr.reduce((a, b)=> {
+    return a + b;
+  }, 0);
+  // console.log(totalmrp);
+  document.getElementById('mrpcalc').innerText = totalmrp;
+  document.getElementById('dpcalc').innerText = totaldp;
+  document.getElementById('spcalc').innerText = totalsp;
+  mrparr = [];
+  dparr = [];
+  sparr = []; 
+  
+  var n = new Date();
+  var y = n.getFullYear();
+  var m = n.getMonth() + 1 ;
+  var d = n.getDate(); 
+  document.getElementById('date').innerHTML = d + "-" + m + "-" + y;
+});
+
+document.getElementById('printimg').addEventListener('click', ()=> {
+  var node = document.getElementById('modal-content');
+  domtoimage.toPng(node).then((dataUrl)=> {
+    var image = new Image(); 
+    image.src = dataUrl;
+    downloadImg(dataUrl, "bill.png");
+  }).catch((error)=> {
+    alert("cannot print bill..! take screenshot!!");
+  });
+});
+function downloadImg(url , name) {
+  var a = document.createElement('a');
+  a.download = name;
+  a.href = url;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  delete a;
+}
+
 
 const searchBox = document.querySelector('.searchBox');
 searchBox.addEventListener('input', ()=> {

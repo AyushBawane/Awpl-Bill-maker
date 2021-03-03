@@ -31,3 +31,7 @@ html {
   align-items: center;
   justify-content: center;
 } 
+.mainCard {
+  border: 10px solid red;
+}
+
