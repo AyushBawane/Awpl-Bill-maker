@@ -1,3 +1,49 @@
+
+// // start of new file
+// wellnessName = ["Free You ANION SANITARY PAD","Genodoc Wash","Veindoc Oil","H Doc Hand Sanitizer","Ayush Kwath","Joint Curator Oil","EXE PANCH TULSI OIL","EXE JC OINT","Herbal Green Tea","ADIDOC Drop","Triphala Ras","Coughdoc Ras","EXE Herbal Mehandi","Exe Wheat Grass Powder","EXE B-TON OINT","VIRALDOC","Kidgdoc","Prassdoc","Alrgydoc Ras","Braindoc Ras","GYNEDOC","Daibodoc Ras","Livodoc","IMMUNODOC","FEVODOC PRAVAHI KWATH","ORTHODOC PRAVAHI KWATH","Cardiodoc","Thunder Blast","Pilodoc Ras","Stondoc","THYDOC PRAVAHI KWATH","Chlorodoc Ras","Obeodoc"];
+
+// FaceName = ["EXE ALOEVERA CUCUMBER CREAM","EXE HERBAL FACE WASH","EXE HERBAL FACE PACK CREAM","EXE HERBAL FACE SCRUB CREAM","EXE ALOEVERA SAFFRON OINT","EXE HEAL DOC CREAM"];
+// FaceImage = ["EXE ALOEVERA CUCUMBER CREAM","EXE HERBAL FACE WASH","EXE HERBAL FACE PACK CREAM","EXE HERBAL FACE SCRUB CREAM","EXE ALOEVERA SAFFRON OINT","EXE HEAL DOC CREAM"];
+// HairName = ["EXE HAIR CLEANSER","HAIR DOC","EXE HAIR SHINE OINT"];
+// HairName = ["DENTODOC Dental Cream"];
+// FoodName = ["FENNELDOC Drop","Immunity Drop","DIGIDOC Powder","Giloy Capsule","STEVIADOC Drop","Giloy Juice","FITDOC Powder","CURCIDOC Drop","G-COFFEEDOC","BERRYDOC Capsule","CURCIDOC Capsule","MORIDOC Capsule","OMEGADOC Capsule","COW-C-DOC Capsule","SPIRADOC Capsule","Noni Juice","SEABUCKDOC Juice","VITADOC Capsule","SLIMDOC Powder","BERRYDOC Juice","HEIGHTDOC Powder","MASSDOC Powder","MUSCLEDOC powder"];
+
+
+//   var temp = "";
+//   var face = document.getElementById('wellnessProducts');
+// FaceName.forEach((element)=>{
+//   var faceinner = document.getElementById('wellnessProducts').innerHTML;
+//   // console.log(faceinner);
+//   face.innerHTML = faceinner + `<div class="card m-2 mainCard" style="width: 18rem;">
+//         <img src="beauty/EXE_ALOEVERA_CUCUMBER_CREAM.jpg" class="card-img-top" alt="...">
+//         <div class="card-body text-center">
+//         <h5 class="card-title">${element}</h5>
+//           <div class="card-text m-0 ">
+//             <p class="m-0 ">
+//               MRP-rate : <span class="mrp-rate">138</span>
+//             </p>
+//             <p class="m-0 ">
+//               DP-rate : <span class="dp-rate">115</span>
+//             </p>
+//             <p class="m-0 ">
+//               SP : <span class="sp-count">0.50</span>
+//             </p>
+//             <p class="m-0 ">
+//               id : ${id}
+//             </p>
+
+//             <p class="qty">
+//               Qty. : 10 pc.
+//             </p>
+//           </div>
+//           <button type="button" id="0 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
+//         </div>
+//       </div>`;
+      
+// });
+
+// end of new file
+
 var clickedId;
 var thismrp;
 var thisdp;
@@ -161,3 +207,5 @@ foodP.addEventListener('click', function() {
   document.querySelector('.oralProducts').style.display = "none";
   document.querySelector('.foodProducts').style.display = "block";
 });
+
+ 
