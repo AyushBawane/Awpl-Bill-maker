@@ -34,4 +34,7 @@ html {
 .mainCard {
   border: 10px solid red;
 }
+#printBill {
+  font-family: 'RocknRoll One', sans-serif;
+}
 
