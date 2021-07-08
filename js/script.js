@@ -1,49 +1,47 @@
 
-// // start of new file
-// wellnessName = ["Free You ANION SANITARY PAD","Genodoc Wash","Veindoc Oil","H Doc Hand Sanitizer","Ayush Kwath","Joint Curator Oil","EXE PANCH TULSI OIL","EXE JC OINT","Herbal Green Tea","ADIDOC Drop","Triphala Ras","Coughdoc Ras","EXE Herbal Mehandi","Exe Wheat Grass Powder","EXE B-TON OINT","VIRALDOC","Kidgdoc","Prassdoc","Alrgydoc Ras","Braindoc Ras","GYNEDOC","Daibodoc Ras","Livodoc","IMMUNODOC","FEVODOC PRAVAHI KWATH","ORTHODOC PRAVAHI KWATH","Cardiodoc","Thunder Blast","Pilodoc Ras","Stondoc","THYDOC PRAVAHI KWATH","Chlorodoc Ras","Obeodoc"];
+// start of new file
+ProductName = ["Free You ANION SANITARY PAD","Genodoc Wash","Veindoc Oil","H Doc Hand Sanitizer","Ayush Kwath","Joint Curator Oil","EXE PANCH TULSI OIL","EXE JC OINT","Herbal Green Tea","ADIDOC Drop","Triphala Ras","Coughdoc Ras","EXE Herbal Mehandi","Prodoc","Exe Wheat Grass Powder","EXE B-TON OINT","VIRALDOC","Kidgdoc","Aloevera Juice","Prassdoc","Alrgydoc Ras","Braindoc Ras","GYNEDOC","Diabodoc Ras","Livodoc","IMMUNODOC","FEVODOC PRAVAHI KWATH","ORTHODOC PRAVAHI KWATH","Cardiodoc","Thunder Blast","Pilodoc Ras","Stondoc","THYDOC PRAVAHI KWATH","Chlorodoc Ras","Obeodoc","Exe Alovera Syrup","Exe Herbal Handwash","Germidoc Spray","Exe TSDoc Toilet Seat Spray","Exe FVDoc Oint","Exe C Comfort Oil","EXE ALOEVERA CUCUMBER CREAM","EXE HERBAL FACE WASH","EXE HERBAL FACE PACK CREAM","EXE HERBAL FACE SCRUB CREAM","EXE ALOEVERA SAFFRON OINT","EXE HEAL DOC CREAM","EXE HAIR CLEANSER","HAIR DOC","EXE HAIR SHINE OINT","DENTODOC Dental Cream","FENNELDOC Drop","Immunity Drop","DIGIDOC Powder","Giloy Capsule","STEVIADOC Drop","Giloy Juice","FITDOC Powder","CURCIDOC Drop","G-COFFEEDOC","BERRYDOC Capsule","CURCIDOC Capsule","MORIDOC Capsule","OMEGADOC Capsule","COW-C-DOC Capsule","SPIRADOC Capsule","Noni Juice","SEABUCKDOC Juice","VITADOC Capsule","SLIMDOC Powder","BERRYDOC Juice","HEIGHTDOC Powder","MASSDOC Powder","MUSCLEDOC powder","EXE Golden Milk Powder","EXE Ginseng Tablet","EXE Ashwagandha Tablet"];
+productImage =["wellness/sanitary-pad.jpg","wellness/gino-doc.jpg","wellness/veindoc.jpg","wellness/ehe-h-doc.jpg","wellness/ayush-kwath-powder.jpg","wellness/Joint-Curator-Oil.jpg","wellness/Panch-Tulsi.jpg","wellness/jc-gel.jpg","wellness/Herbal-Tea.jpg","wellness/adidoc.jpg","wellness/triphala-ras.jpg","wellness/coughdoc.jpg","wellness/exe-herbal-mehandi.jpg","wellness/Prodoc.jpg","wellness/exe-wheet-grass.jpg","wellness/bton-gel.jpg","wellness/VIRALDOC.jpg","wellness/Kidgdog.jpg","wellness/Aloevera.jpg","wellness/prassdoc.jpg","wellness/alrgydoc.jpg","wellness/braindoc.jpg","wellness/Gynedoc-rasd.jpg","wellness/Diabodoc-box.jpg","wellness/Livodoc.jpg","wellness/IMMUNODOC.jpg","wellness/FEVOODOC.jpg","wellness/Orthodoc.jpg","wellness/cardiodoc-ras.jpg","wellness/THUNDER.jpg","wellness/Pilodoc.jpg","wellness/Stondoc.jpg","wellness/Thyrodoc.jpg","wellness/Chlorodoc.jpg","wellness/Obeodoc.jpg","wellness/Aloevera_syrup.jpg","wellness/EXE-Herbal-Hand-Wash.jpg","wellness/Germidoc-Spray.jpg","wellness/EXE-TSDoc-Toilet-Seat-Spray.jpg","wellness/EXE-FVDOC-Oint-Fruit-N-Veggie-Wash.jpg","wellness/EXE-C-COMFORT-OIL.jpg","beauty/EXE_ALOEVERA_CUCUMBER_CREAM.jpg","beauty/exe-herbal-facewash.jpg","beauty/herbal-face-pack.jpg","beauty/herbal-face-scrub.jpg","beauty/aloevera-saffron-gel.jpg","beauty/heal-doc-cream.jpg","hair/exe-hair-cleanger.jpg","hair/Hair-Doc.jpg","hair/exe-hair-c.jpg","img/Dento-Doc.jpg","food/FENNELDOC-DROP.jpg","food/immunity-drop.jpg","food/DIGIDOC-POWDER.jpg","food/giloy-juice.jpg","food/STEVIADOC-DROP.jpg","food/giloy-juice.jpg","food/FITDOC-POWDER.jpg","food/CURCIDOC-CAPSULE.jpg","food/G-COFFEEDOC.jpg","food/BERRYDOC-CAPSULE.jpg","food/CURCIDOC-CAPSULE.jpg","food/MORIDOC.jpg","food/OMEGADOC.jpg","food/COW-C-DOC.jpg","food/SPIRADOC-CAPSULE.jpg","food/Noni-Juice.jpg","food/SEABUCKDOC.jpg","food/VITADOC.jpg","food/SLIMDOC-POWDER.jpg","food/BERRYDOC-JUICE.jpg","food/HEIGHTDOC-POWDER.jpg","food/MASSDOC-POWDER.jpg","food/MUSCLEDOC.jpg","food/EXE-Golden-Milk-Powder.jpg","food/EXE-Ginseng-Tablet.jpg","food/EXE-Ashwagandha-Tablet.jpg"];
+productMRP = ["138","238","263","250","289","394","414","427","444","450","461","495","474","641","624","714","706","816","1001","1142","1282","1361","1474","1492","1528","2116","2195","2299","2314","2292","2476","2582","2509","2509","2627","1001","194","222","222","333","119","239","248","251","251","259","268","242","242","283","252","231.00","223.00","239.00","234.00","407.00","434.00","486.00","574.00","633.00","1121.00","1125.00","1137.00","1140.00","1141.00","1146.00","1177.00","1278.00","1521.00","1660.00","1992.00","3203.00","4034.00","5238.00","1187","930","921"];
+productDP = ["115","198","219","232","241","328","345","356","370","375","384","412","395","534","520","595","588","680","834","952","1068","1135","1229","1243","1273","1763","1829","1916","1928","1910","2063","2152","2091","2091","2189","834","162","185","185","277","99","199","207","209","209","216","223","202","202","236","210","193","186","199","195","339","362","405","478","527","934","937","948","950","951","955","981","1065","1268","1383","1660","2669","3362","4365","879","775","767"];
+productSP = ["0.50","1","1","0.25","1","2","2","2","2","2","2","2","2","3","3","3","3","4","5","6","7","7","8","8","8","12","12","13","13","13","13","14","13","13","15","5","0.5","0.75","0.75","0.75","0.5","1","1","1","1","1","1","1","1","1","1","1","1","1","1","2","2","2","3","3","6","6","6","6","6","6","6","7","8","8","11","17","20","25","5","5","5"];
+// console.log(productMRP.length);
+// console.log(productDP.length);
+// console.log(productSP.length);
+// // console.log(ProductName.length);
 
-// FaceName = ["EXE ALOEVERA CUCUMBER CREAM","EXE HERBAL FACE WASH","EXE HERBAL FACE PACK CREAM","EXE HERBAL FACE SCRUB CREAM","EXE ALOEVERA SAFFRON OINT","EXE HEAL DOC CREAM"];
-// FaceImage = ["EXE ALOEVERA CUCUMBER CREAM","EXE HERBAL FACE WASH","EXE HERBAL FACE PACK CREAM","EXE HERBAL FACE SCRUB CREAM","EXE ALOEVERA SAFFRON OINT","EXE HEAL DOC CREAM"];
-// HairName = ["EXE HAIR CLEANSER","HAIR DOC","EXE HAIR SHINE OINT"];
-// HairName = ["DENTODOC Dental Cream"];
-// FoodName = ["FENNELDOC Drop","Immunity Drop","DIGIDOC Powder","Giloy Capsule","STEVIADOC Drop","Giloy Juice","FITDOC Powder","CURCIDOC Drop","G-COFFEEDOC","BERRYDOC Capsule","CURCIDOC Capsule","MORIDOC Capsule","OMEGADOC Capsule","COW-C-DOC Capsule","SPIRADOC Capsule","Noni Juice","SEABUCKDOC Juice","VITADOC Capsule","SLIMDOC Powder","BERRYDOC Juice","HEIGHTDOC Powder","MASSDOC Powder","MUSCLEDOC powder"];
+  var products = document.getElementById('productsCard');
+for (var i = 0; i < ProductName.length; i++) {
+  var productsinner = document.getElementById('productsCard').innerHTML;
+  products.innerHTML = productsinner + `<div class="card m-2 mainCard" style="width: 18rem;">
+        <img src="${productImage[i]}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+        <h5 class="card-title">${ProductName[i]}</h5>
+          <div class="card-text m-0 ">
+            <p class="m-0 ">
+              MRP-rate : <span class="mrp-rate">${productMRP[i]}</span>
+            </p>
+            <p class="m-0 ">
+              DP-rate : <span class="dp-rate">${productDP[i]}</span>
+            </p>
+            <p class="m-0 ">
+              SP : <span class="sp-count">${productSP[i]}</span>
+            </p>
 
-
-//   var temp = "";
-//   var face = document.getElementById('wellnessProducts');
-// FaceName.forEach((element)=>{
-//   var faceinner = document.getElementById('wellnessProducts').innerHTML;
-//   // console.log(faceinner);
-//   face.innerHTML = faceinner + `<div class="card m-2 mainCard" style="width: 18rem;">
-//         <img src="beauty/EXE_ALOEVERA_CUCUMBER_CREAM.jpg" class="card-img-top" alt="...">
-//         <div class="card-body text-center">
-//         <h5 class="card-title">${element}</h5>
-//           <div class="card-text m-0 ">
-//             <p class="m-0 ">
-//               MRP-rate : <span class="mrp-rate">138</span>
-//             </p>
-//             <p class="m-0 ">
-//               DP-rate : <span class="dp-rate">115</span>
-//             </p>
-//             <p class="m-0 ">
-//               SP : <span class="sp-count">0.50</span>
-//             </p>
-//             <p class="m-0 ">
-//               id : ${id}
-//             </p>
-
-//             <p class="qty">
-//               Qty. : 10 pc.
-//             </p>
-//           </div>
-//           <button type="button" id="0 " onClick="getId()" class="btn itemadd btn-primary">Add Item</button>
-//         </div>
-//       </div>`;
-      
-// });
+            <p class="qty">
+              Qty. : 10 pc.
+            </p>
+          </div>
+          <button type="button" id="${i}" onClick="getId()" class="btn itemadd btn-primary">Add Item </button>
+          <div class="alert itemCount d-inline p-1 m-0 alert-primary">0</div>
+        </div>
+        
+      </div>`;
+  // console.log(ProductName[i]);
+}
 
 // end of new file
-
+  
 var clickedId;
 var thismrp;
 var thisdp;
@@ -58,6 +56,13 @@ function getId() {
   thisdp = parseInt(document.getElementsByClassName('dp-rate')[clickedId].innerText);
   thissp = parseFloat(document.getElementsByClassName('sp-count')[clickedId].innerText);
   thistitle = document.getElementsByClassName('card-title')[clickedId].innerText.toUpperCase();
+  thisItemCount = document.getElementsByClassName('itemCount')[clickedId].innerText;
+  var itemCountPlus = parseInt(thisItemCount) + 1;
+  clickedItemCount = document.getElementsByClassName('itemCount')[clickedId].innerText = itemCountPlus;
+   
+  // console.log(thisItemCount);
+  
+ 
 
   var content = `<div class="row px-1 ">
   <div class="col-6 bg-light border py-2">${thistitle}</div>
@@ -87,6 +92,14 @@ gettotal.addEventListener('click', ()=> {
     dparr.push(dppush);
     sparr.push(sppush);
   }
+  // console.log(mrparr);
+//   thismrparr = document.getElementsByClassName('sp-count');
+//   var arrp = document.getElementById('arrprint');
+//   for (var i = 0; i < thismrparr.length; i++) {
+//   // console.log(thismrparr[i].innerText);
+//   var arrpin = document.getElementById('arrprint').innerText;
+//   arrp.innerText = arrpin + `"${thismrparr[i].innerText}",`;
+// }
   var totalmrp = mrparr.reduce((a, b)=> {
     return a + b;
   }, 0);
@@ -159,53 +172,53 @@ allP.addEventListener('click', function() {
   document.querySelector('.foodProducts').style.display = "block";
 });
 
-var wellnessP = document.querySelector('#wellnessP');
-wellnessP.addEventListener('click', function() {
-  console.log("okay");
-  document.querySelector('.wellnessProducts').style.display = "block";
-  document.querySelector('.beautyProducts').style.display = "none";
-  document.querySelector('.hairProducts').style.display = "none";
-  document.querySelector('.oralProducts').style.display = "none";
-  document.querySelector('.foodProducts').style.display = "none";
-});
+// var wellnessP = document.querySelector('#wellnessP');
+// wellnessP.addEventListener('click', function() {
+//   console.log("okay");
+//   document.querySelector('.wellnessProducts').style.display = "block";
+//   document.querySelector('.beautyProducts').style.display = "none";
+//   document.querySelector('.hairProducts').style.display = "none";
+//   document.querySelector('.oralProducts').style.display = "none";
+//   document.querySelector('.foodProducts').style.display = "none";
+// });
 
-var beautyP = document.querySelector('#beautyP');
-beautyP.addEventListener('click', function() {
-  console.log("okay");
-  document.querySelector('.wellnessProducts').style.display = "none";
-  document.querySelector('.beautyProducts').style.display = "block";
-  document.querySelector('.hairProducts').style.display = "none";
-  document.querySelector('.oralProducts').style.display = "none";
-  document.querySelector('.foodProducts').style.display = "none";
-});
-var hairP = document.querySelector('#hairP');
-hairP.addEventListener('click', function() {
-  console.log("okay");
-  document.querySelector('.wellnessProducts').style.display = "none";
-  document.querySelector('.beautyProducts').style.display = "none";
-  document.querySelector('.hairProducts').style.display = "block";
-  document.querySelector('.oralProducts').style.display = "none";
-  document.querySelector('.foodProducts').style.display = "none";
-});
+// var beautyP = document.querySelector('#beautyP');
+// beautyP.addEventListener('click', function() {
+//   console.log("okay");
+//   document.querySelector('.wellnessProducts').style.display = "none";
+//   document.querySelector('.beautyProducts').style.display = "block";
+//   document.querySelector('.hairProducts').style.display = "none";
+//   document.querySelector('.oralProducts').style.display = "none";
+//   document.querySelector('.foodProducts').style.display = "none";
+// });
+// var hairP = document.querySelector('#hairP');
+// hairP.addEventListener('click', function() {
+//   console.log("okay");
+//   document.querySelector('.wellnessProducts').style.display = "none";
+//   document.querySelector('.beautyProducts').style.display = "none";
+//   document.querySelector('.hairProducts').style.display = "block";
+//   document.querySelector('.oralProducts').style.display = "none";
+//   document.querySelector('.foodProducts').style.display = "none";
+// });
 
-var oralP = document.querySelector('#oralP');
-oralP.addEventListener('click', function() {
-  console.log("okay");
-  document.querySelector('.wellnessProducts').style.display = "none";
-  document.querySelector('.beautyProducts').style.display = "none";
-  document.querySelector('.hairProducts').style.display = "none";
-  document.querySelector('.oralProducts').style.display = "block";
-  document.querySelector('.foodProducts').style.display = "none";
-});
+// var oralP = document.querySelector('#oralP');
+// oralP.addEventListener('click', function() {
+//   console.log("okay");
+//   document.querySelector('.wellnessProducts').style.display = "none";
+//   document.querySelector('.beautyProducts').style.display = "none";
+//   document.querySelector('.hairProducts').style.display = "none";
+//   document.querySelector('.oralProducts').style.display = "block";
+//   document.querySelector('.foodProducts').style.display = "none";
+// });
 
-var foodP = document.querySelector('#foodP');
-foodP.addEventListener('click', function() {
-  console.log("okay");
-  document.querySelector('.wellnessProducts').style.display = "none";
-  document.querySelector('.beautyProducts').style.display = "none";
-  document.querySelector('.hairProducts').style.display = "none";
-  document.querySelector('.oralProducts').style.display = "none";
-  document.querySelector('.foodProducts').style.display = "block";
-});
+// var foodP = document.querySelector('#foodP');
+// foodP.addEventListener('click', function() {
+//   console.log("okay");
+//   document.querySelector('.wellnessProducts').style.display = "none";
+//   document.querySelector('.beautyProducts').style.display = "none";
+//   document.querySelector('.hairProducts').style.display = "none";
+//   document.querySelector('.oralProducts').style.display = "none";
+//   document.querySelector('.foodProducts').style.display = "block";
+// });
 
  
