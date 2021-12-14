@@ -39,7 +39,7 @@ for (var i = 0; i < ProductName.length; i++) {
             </p>
           </div>
           <button type="button" id="${i}" onClick="getId()" class="btn itemadd btn-primary">Add Item </button>
-          <div class="alert itemCount d-inline p-1 m-0 alert-primary">0</div>
+          <div class="itemCount d-inline p-1 m-0 ">0</div>
         </div>
         
       </div>`;

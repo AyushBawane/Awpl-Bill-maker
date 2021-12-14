@@ -2,6 +2,9 @@
 * {
   font-family: 'RocknRoll One', sans-serif;
 }
+:root{
+  --primecolor : #28c681 ;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +16,9 @@ html {
   border: none;
   outline: none;
 }
-
+button, nav{
+  background-color: var(--primecolor) !important;
+}
 .nav-link:hover {
   color: black;
   border: none;
@@ -37,4 +42,8 @@ html {
 #printBill {
   font-family: 'RocknRoll One', sans-serif;
 }
-
+.itemCount{
+  border: 1px solid var(--primecolor);
+  background-color: #28c68149;
+  border-radius: 5px;
+}
