@@ -1,162 +1,31 @@
 
-// start of new file
-ProductName = ["Free You ANION SANITARY PAD","Genodoc Wash","Veindoc Oil","H Doc Hand Sanitizer","Ayush Kwath","Joint Curator Oil","EXE PANCH TULSI OIL","EXE JC OINT","Herbal Green Tea","ADIDOC Drop","Triphala Ras","Coughdoc Ras","EXE Herbal Mehandi","Prodoc","Exe Wheat Grass Powder","EXE B-TON OINT","VIRALDOC","Kidgdoc","Aloevera Juice","Prassdoc","Alrgydoc Ras","Braindoc Ras","GYNEDOC","Diabodoc Ras","Livodoc","IMMUNODOC","FEVODOC PRAVAHI KWATH","ORTHODOC PRAVAHI KWATH","Cardiodoc","Thunder Blast","Pilodoc Ras","Stondoc","THYDOC PRAVAHI KWATH","Chlorodoc Ras","Obeodoc","Exe Alovera Syrup","Exe Herbal Handwash","Germidoc Spray","Exe TSDoc Toilet Seat Spray","Exe FVDoc Oint","Exe C Comfort Oil","EXE ALOEVERA CUCUMBER CREAM","EXE HERBAL FACE WASH","EXE HERBAL FACE PACK CREAM","EXE HERBAL FACE SCRUB CREAM","EXE ALOEVERA SAFFRON OINT","EXE HEAL DOC CREAM","EXE HAIR CLEANSER","HAIR DOC","EXE HAIR SHINE OINT","DENTODOC Dental Cream","FENNELDOC Drop","Immunity Drop","DIGIDOC Powder","Giloy Capsule","STEVIADOC Drop","Giloy Juice","FITDOC Powder","CURCIDOC Drop","G-COFFEEDOC","BERRYDOC Capsule","CURCIDOC Capsule","MORIDOC Capsule","OMEGADOC Capsule","COW-C-DOC Capsule","SPIRADOC Capsule","Noni Juice","SEABUCKDOC Juice","VITADOC Capsule","SLIMDOC Powder","BERRYDOC Juice","HEIGHTDOC Powder","MASSDOC Powder","MUSCLEDOC powder","EXE Golden Milk Powder","EXE Ginseng Tablet","EXE Ashwagandha Tablet","EYEDOC DROP (Pack of 3","HYPCARE CAPSULES","Eco Arogyam Tea","SUPERVO RICE BRAN OIL","ZINC TABLETS","VITAMIN B12 TABLET","VITAMIN D2 TABLET","GREEN COFFEE BEAN EXTRACT CAPSULE","ARJUN EXTRACT CAPSULE","GREEN TEA EXTRACT CAPSULE","TESTOFAST CAPSULE","SHOTS 30 (Antioxidant Booster)","Power Flush Toilet Cleaner","Lim Fresh Dish Wash","EASY SWEEP","Toshine Detergent Powder","TOSHINE LIQUID WASH","VEDIK AGRO- ECO HARIYALI","VEDIK AGRO- PGPR","VEDIK AGRO-AGRO 90","VEDIK AGRO- Bhuvita","BATHVEDA BEAUTY CREAM BAR","Bathveda Glycerin & Natural Oil Bar","Neem Tulsi Soap (Pack of 3)"];
-
-productImage =["wellness/sanitary-pad.jpg","wellness/gino-doc.jpg","wellness/veindoc.jpg","wellness/ehe-h-doc.jpg","wellness/ayush-kwath-powder.jpg","wellness/Joint-Curator-Oil.jpg","wellness/Panch-Tulsi.jpg","wellness/jc-gel.jpg","wellness/Herbal-Tea.jpg","wellness/adidoc.jpg","wellness/triphala-ras.jpg","wellness/coughdoc.jpg","wellness/exe-herbal-mehandi.jpg","wellness/Prodoc.jpg","wellness/exe-wheet-grass.jpg","wellness/bton-gel.jpg","wellness/VIRALDOC.jpg","wellness/Kidgdog.jpg","wellness/Aloevera.jpg","wellness/prassdoc.jpg","wellness/alrgydoc.jpg","wellness/braindoc.jpg","wellness/Gynedoc-rasd.jpg","wellness/Diabodoc-box.jpg","wellness/Livodoc.jpg","wellness/IMMUNODOC.jpg","wellness/FEVOODOC.jpg","wellness/Orthodoc.jpg","wellness/cardiodoc-ras.jpg","wellness/THUNDER.jpg","wellness/Pilodoc.jpg","wellness/Stondoc.jpg","wellness/Thyrodoc.jpg","wellness/Chlorodoc.jpg","wellness/Obeodoc.jpg","wellness/Aloevera_syrup.jpg","wellness/EXE-Herbal-Hand-Wash.jpg","wellness/Germidoc-Spray.jpg","wellness/EXE-TSDoc-Toilet-Seat-Spray.jpg","wellness/EXE-FVDOC-Oint-Fruit-N-Veggie-Wash.jpg","wellness/EXE-C-COMFORT-OIL.jpg","beauty/aloevera-cucumber-cream.jpg","beauty/exe-herbal-facewash.jpg","beauty/herbal-face-pack.jpg","beauty/herbal-face-scrub.jpg","beauty/aloevera-saffron-gel.jpg","beauty/heal-doc-cream.jpg","hair/exe-hair-cleanger.jpg","hair/Hair-Doc.jpg","hair/exe-hair-c.jpg","oral/Dento-Doc.jpg","food/FENNELDOC-DROP.jpg","food/immunity-drop.jpg","food/DIGIDOC-POWDER.jpg","food/giloy-juice.jpg","food/STEVIADOC-DROP.jpg","food/giloy-juice.jpg","food/FITDOC-POWDER.jpg","food/CURCIDOC-CAPSULE.jpg","food/G-COFFEEDOC.jpg","food/BERRYDOC-CAPSULE.jpg","food/CURCIDOC-CAPSULE.jpg","food/MORIDOC.jpg","food/OMEGADOC.jpg","food/COW-C-DOC.jpg","food/SPIRADOC-CAPSULE.jpg","food/Noni-Juice.jpg","food/SEABUCKDOC.jpg","food/VITADOC.jpg","food/SLIMDOC-POWDER.jpg","food/BERRYDOC-JUICE.jpg","food/HEIGHTDOC-POWDER.jpg","food/MASSDOC-POWDER.jpg","food/MUSCLEDOC.jpg","food/EXE-Golden-Milk-Powder.jpg","food/EXE-Ginseng-Tablet.jpg","food/EXE-Ashwagandha-Tablet.jpg","wellness/eyedoc-drop.jpg","wellness/hypcare-capsule.jpg","food/eco-arogyam-tea.jpg","food/rice-bran-oil.jpg","food/zink-tablet.jpg","food/vitamin-b12.jpg","food/vitamin-d2.jpg","food/AWPL-GREEN-COFFIE.jpg","food/ARJUN-EXTRACT-CAPSULE.jpg","food/GREEN-TEA-EXTRACT-CAP.jpg","food/testofast-Cap.jpg","food/shots-30-box.jpg","home/power-flush-toilet-cleaner.jpg","home/limfresh-dish-wash.jpg","home/easy-sweep.jpg","home/toshine-detergent-powder.jpg","home/toshine-liquid-wash.jpg","agri/eco-hariyali.jpg","agri/pgpr.jpg","agri/agro-90.jpg","agri/bhuvita.jpg","beauty/bathveda-cream-bar.jpg","beauty/bathveda.jpg","beauty/neem-tulsi-soap.jpg"];
-
-productMRP = ["138","238","263","250","289","394","414","427","444","450","461","495","474","641","624","714","706","816","1001","1142","1282","1361","1474","1492","1528","2116","2195","2299","2314","2292","2476","2582","2509","2509","2627","1001","194","222","222","333","119","239","248","251","251","259","268","242","242","283","252","231.00","223.00","239.00","234.00","407.00","434.00","486.00","574.00","633.00","1121.00","1125.00","1137.00","1140.00","1141.00","1146.00","1177.00","1278.00","1521.00","1660.00","1992.00","3203.00","4034.00","5238.00","1187","930","921","1320","1026.00","149","295.00","399.00","629.00","813.00","1212.00 ","1258.00","1359.00","2516.00","5159.00","99.00","106.00","111.00 ","169.00","230.00","1154.00","581.00 ","551.00","551.00","210.00 ","213.00","180.00 "];
-
-productDP = ["115","198","219","232","241","328","345","356","370","375","384","412","395","534","520","595","588","680","834","952","1068","1135","1229","1243","1273","1763","1829","1916","1928","1910","2063","2152","2091","2091","2189","834","162","185","185","277","99","199","207","209","209","216","223","202","202","236","210","193","186","199","195","339","362","405","478","527","934","937","948","950","951","955","981","1065","1268","1383","1660","2669","3362","4365","879","879","775","1135","789"," 124","229","309","484","625","932","974","1045","1935","4299","83.00"," 89.00"," 89.00","135.00","184.00","962.00","484.00","459.00","459.00","167.00","169.00","150.00"];
-
-productSP = ["0.50","1","1","0.25","1","2","2","2","2","2","2","2","2","3","3","3","3","4","5","6","7","7","8","8","8","12","12","13","13","13","13","14","13","13","15","5","0.5","0.75","0.75","0.75","0.5","1","1","1","1","1","1","1","1","1","1","1","1","1","1","2","2","2","3","3","6","6","6","6","6","6","6","7","8","8","11","17","20","25","5","5","5","5","5","0.25","0.5","2","3","4","5","6","6","12","27","0.25","0.25","0.25"," 0.25","0.5","6","3","2","2","0.25","0.25","0.25"];
-// console.log(productMRP.length);
-// console.log(productMRP.length);
-// console.log(productDP.length);
-// console.log(productSP.length);
-// console.log(ProductName.length);
-
-
-// for (let i = 0; i < ProductName.length; i++) {
-//     console.log(productMRP[i] , productDP[i],ProductName[i] , i);
-
-// }
-  var products = document.getElementById('productsCard');
-for (var i = 0; i < ProductName.length; i++) {
-  var productsinner = document.getElementById('productsCard').innerHTML;
-  products.innerHTML = productsinner + `<div class="card m-2 mainCard" style="width: 18rem;">
-        <img src="${productImage[i]}" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-        <h5 class="card-title">${ProductName[i]}</h5>
-          <div class="card-text m-0 ">
-            <p class="m-0 ">
-              MRP-rate : <span class="mrp-rate">${productMRP[i]}</span>
-            </p>
-            <p class="m-0 ">
-              DP-rate : <span class="dp-rate">${productDP[i]}</span>
-            </p>
-            <p class="m-0 mb-2 ">
-              SP : <span class="sp-count">${productSP[i]}</span>
-            </p>
-          </div>
-          <button type="button" id="${i}" onClick="getId()" class="btn itemadd btn-primary">Add Item </button>
-          <div class="itemCount d-inline p-1 m-0 ">0</div>
-        </div>
-        
-      </div>`;
-  // console.log(ProductName[i]);
-}
-
-// end of new file
-  
-var clickedId;
-var thismrp;
-var thisdp;
-var thissp;
-var thistitle;
-var thiscard;
-function getId() {
-  clickedId = parseInt(event.target.id);
-  //  console.log(clickedId);
-  thiscard = document.getElementsByClassName('mainCard')[clickedId].classList.add('border-primary');
-  thismrp = parseInt(document.getElementsByClassName('mrp-rate')[clickedId].innerText);
-  thisdp = parseInt(document.getElementsByClassName('dp-rate')[clickedId].innerText);
-  thissp = parseFloat(document.getElementsByClassName('sp-count')[clickedId].innerText);
-  thistitle = document.getElementsByClassName('card-title')[clickedId].innerText.toUpperCase();
-  thisItemCount = document.getElementsByClassName('itemCount')[clickedId].innerText;
-  var itemCountPlus = parseInt(thisItemCount) + 1;
-  clickedItemCount = document.getElementsByClassName('itemCount')[clickedId].innerText = itemCountPlus;
-   
-  // console.log(thisItemCount);
-  
- 
-
-  var content = `<div class="row px-1 ">
-  <div class="col-6 bg-light border py-2">${thistitle}</div>
-  <div class="col-2 mrpval bg-light border py-2">${thismrp}</div>
-  <div class="col-2 dpval bg-light border py-2">${thisdp}</div>
-  <div class="col-2 spval bg-light border py-2">${thissp}</div>
-  </div>`;
-  var appending = document.querySelector('.modal-dynamic').innerHTML = document.querySelector('.modal-dynamic').innerHTML + content;
-
-
-}
-
-var mrparr = [];
-var dparr = [];
-var sparr = [];
-var gettotal = document.getElementById('printBill');
-gettotal.addEventListener('click', ()=> {
-  var getmrp = document.getElementsByClassName('mrpval');
-  var getdp = document.getElementsByClassName('dpval');
-  var getsp = document.getElementsByClassName('spval');
-  for (var i = 0; i < getmrp.length; i++) {
-    var mrppush = parseInt(getmrp[i].innerText);
-    var dppush = parseInt(getdp[i].innerText);
-    var sppush = parseFloat(getsp[i].innerText);
-    // console.log(mrppush);
-    mrparr.push(mrppush);
-    dparr.push(dppush);
-    sparr.push(sppush);
-  }
-  // console.log(mrparr);
-//   thismrparr = document.getElementsByClassName('sp-count');
-//   var arrp = document.getElementById('arrprint');
-//   for (var i = 0; i < thismrparr.length; i++) {
-//   // console.log(thismrparr[i].innerText);
-//   var arrpin = document.getElementById('arrprint').innerText;
-//   arrp.innerText = arrpin + `"${thismrparr[i].innerText}",`;
-// }
-  var totalmrp = mrparr.reduce((a, b)=> {
-    return a + b;
-  }, 0);
-  var totaldp = dparr.reduce((a, b)=> {
-    return a + b;
-  }, 0);
-  var totalsp = sparr.reduce((a, b)=> {
-    return a + b;
-  }, 0);
-  // console.log(totalmrp);
-  document.getElementById('mrpcalc').innerText = totalmrp;
-  document.getElementById('dpcalc').innerText = totaldp;
-  document.getElementById('spcalc').innerText = totalsp;
-  mrparr = [];
-  dparr = [];
-  sparr = []; 
-  
-  var n = new Date();
-  var y = n.getFullYear();
-  var m = n.getMonth() + 1 ;
-  var d = n.getDate(); 
-  document.getElementById('date').innerHTML = d + "-" + m + "-" + y;
-});
-
-document.getElementById('printimg').addEventListener('click', ()=> {
+document.getElementById('printimg').addEventListener('click', () => {
   var node = document.getElementById('modal-content');
-  domtoimage.toPng(node).then((dataUrl)=> {
-    var image = new Image(); 
+  domtoimage.toPng(node).then((dataUrl) => {
+    var image = new Image();
     image.src = dataUrl;
     downloadImg(dataUrl, "bill.png");
-  }).catch((error)=> {
-    alert("cannot print bill..! take screenshot!!");
+  }).then((error) => {
+    alertModal("success", "Your bill is downloaded !");
+  }).catch((error) => {
+    alertModal("danger", "cannot print bill..! take screenshot!!");
   });
 });
-function downloadImg(url , name) {
+function downloadImg(url, name) {
   var a = document.createElement('a');
   a.download = name;
   a.href = url;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-  delete a;
 }
 
-
 const searchBox = document.querySelector('.searchBox');
-searchBox.addEventListener('input', ()=> {
+searchBox.addEventListener('input', () => {
   let searchVal = searchBox.value.toLowerCase();
   // console.log(searchVal);
   let card = document.getElementsByClassName('mainCard');
-  Array.from(card).forEach((element)=> {
+  Array.from(card).forEach((element) => {
     let cardHead = element.getElementsByTagName('h5')[0].innerText.toLowerCase();
     // console.log(cardHead.innerText);
     const check = cardHead.includes(searchVal);
@@ -168,63 +37,256 @@ searchBox.addEventListener('input', ()=> {
   });
 });
 
-// var allP = document.querySelector('#allProducts');
-// allP.addEventListener('click', function() {
-//   console.log("okay");
-//   document.querySelector('.wellnessProducts').style.display = "block";
-//   document.querySelector('.beautyProducts').style.display = "block";
-//   document.querySelector('.hairProducts').style.display = "block";
-//   document.querySelector('.oralProducts').style.display = "block";
-//   document.querySelector('.foodProducts').style.display = "block";
-// });
 
-// var wellnessP = document.querySelector('#wellnessP');
-// wellnessP.addEventListener('click', function() {
-//   console.log("okay");
-//   document.querySelector('.wellnessProducts').style.display = "block";
-//   document.querySelector('.beautyProducts').style.display = "none";
-//   document.querySelector('.hairProducts').style.display = "none";
-//   document.querySelector('.oralProducts').style.display = "none";
-//   document.querySelector('.foodProducts').style.display = "none";
-// });
+// firebawe starts here
 
-// var beautyP = document.querySelector('#beautyP');
-// beautyP.addEventListener('click', function() {
-//   console.log("okay");
-//   document.querySelector('.wellnessProducts').style.display = "none";
-//   document.querySelector('.beautyProducts').style.display = "block";
-//   document.querySelector('.hairProducts').style.display = "none";
-//   document.querySelector('.oralProducts').style.display = "none";
-//   document.querySelector('.foodProducts').style.display = "none";
-// });
-// var hairP = document.querySelector('#hairP');
-// hairP.addEventListener('click', function() {
-//   console.log("okay");
-//   document.querySelector('.wellnessProducts').style.display = "none";
-//   document.querySelector('.beautyProducts').style.display = "none";
-//   document.querySelector('.hairProducts').style.display = "block";
-//   document.querySelector('.oralProducts').style.display = "none";
-//   document.querySelector('.foodProducts').style.display = "none";
-// });
 
-// var oralP = document.querySelector('#oralP');
-// oralP.addEventListener('click', function() {
-//   console.log("okay");
-//   document.querySelector('.wellnessProducts').style.display = "none";
-//   document.querySelector('.beautyProducts').style.display = "none";
-//   document.querySelector('.hairProducts').style.display = "none";
-//   document.querySelector('.oralProducts').style.display = "block";
-//   document.querySelector('.foodProducts').style.display = "none";
-// });
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+import { getFirestore, collection, doc, deleteDoc, Timestamp, updateDoc, getDoc, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 
-// var foodP = document.querySelector('#foodP');
-// foodP.addEventListener('click', function() {
-//   console.log("okay");
-//   document.querySelector('.wellnessProducts').style.display = "none";
-//   document.querySelector('.beautyProducts').style.display = "none";
-//   document.querySelector('.hairProducts').style.display = "none";
-//   document.querySelector('.oralProducts').style.display = "none";
-//   document.querySelector('.foodProducts').style.display = "block";
-// });
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBNteqoJgdIVNrD2SPQwSn0wWKCCDEoDEA",
+  authDomain: "awplbillmaker.firebaseapp.com",
+  projectId: "awplbillmaker",
+  storageBucket: "awplbillmaker.appspot.com",
+  messagingSenderId: "155160500516",
+  appId: "1:155160500516:web:84bf63a0543c6c76763bb1"
+};
 
- 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const database = getFirestore(app);
+const provider = new GoogleAuthProvider();
+
+function signinUser() {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+      const user = result.user;
+      console.log(user);
+      // ...
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      const email = error.email;
+      const credential = GoogleAuthProvider.credentialFromError(error);
+      // ...
+    });
+}
+var ProcductContainer = document.getElementById('productsCard');
+
+// // observing if user logged in or not
+onAuthStateChanged(auth, (user) => {
+  window.user = user;
+  //changing navigation ui wrt login state state
+  if (user) {
+    changeNavOnUserSignIn(user);
+    // changeBodyContentOnUserSignIn();
+    addProductsToBody();
+    document.getElementById('notSignedIn').style.display = 'none';
+    document.getElementById('printBill').classList.remove('d-hid');
+  }
+});
+
+
+
+function changeNavOnUserSignIn(user) {
+  document.getElementById('loggedinstate').innerHTML += ` 
+  <div class="btn-group dropstart">
+      <a style="outline: none;" type="button" class="dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false"><img src="${user.photoURL}" style="width:35px;height:35px;border-radius:50%;border:1px solid green;box-shadow: 0 0 5px rgba(0, 128,   0, 0.658);"
+       alt=""></a>
+
+      <ul style="z-index:9999;" class="dropdown-menu shadow rounded-3">
+      <div class="d-flex flex-column align-items-center">
+      <li><img style="border-radius:50%;border:1px solid green;box-shadow: 0 0 5px rgba(0, 128, 0, 0.658);"
+          class="mt-4 mb-2 mx-5"
+          src="${user.photoURL}"
+          alt=""></li>
+      <li class=" mx-3 mt-2 fw-bold">${user.displayName}</li>
+      <li class="mx-3 mb-2">${user.email}</li>
+      <div class="mt-3" style="border-bottom:2px solid WhiteSmoke;width:100%"></div>
+      <button style="border-top:1px solid gray;" type="button" id="signoutbtn" class="btn mx-2 my-3 btn-success" onClick="signOutUser()">Sign
+      Out</button>
+      <div class="mb-2" style="border-bottom:2px solid WhiteSmoke;width:100%"></div>
+      <li class="mx-3 my-0 py-0 fw-light text-muted">App by <em><a class="text-dark" href="https://github.com/AyushBawane">Ayush Bawane</a></em>.</li>
+    </div>
+  </ul>
+</div>`;
+  document.getElementById('signinBtn').style.display = 'none';
+}
+
+async function addProductsToBody() {
+  if (user) {
+    const querySnapshot = await getDocs(collection(database, `/products`));
+    var i = 0;
+    querySnapshot.forEach((doc) => {
+      var transId = doc.id;
+      var data = doc.data();
+
+      var name = data.name;
+      var image = data.imageURL;
+      var mrp = data.mrp;
+      var dp = data.dp;
+      var sp = data.sp;
+      var cat = data.category;
+      ProcductContainer.innerHTML += `
+      <div class="card m-2 mainCard" style="width: 18rem;">
+      <img src="${image}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+      <h5 class="card-title">${name}</h5>
+      <div class="card-text m-0 ">
+      <p class="m-0 ">
+      MRP-rate : <span class="mrp-rate">${mrp}</span>
+      </p>
+      <p class="m-0 ">
+      DP-rate : <span class="dp-rate">${dp}</span>
+      </p>
+      <p class="m-0 mb-2 ">
+      SP : <span class="sp-count">${sp}</span>
+      </p>
+      </div>
+      <button type="button" id="${i}" onclick="getId(this.id)" class="btn itemadd btn-primary">Add Item </button>
+      <div class="countFunc d-none d-inline">
+      <button type="button" id="${i}" onclick="manipulateVal(this)" class="btn itemadd m-0 p-1">+</button>
+      <div class="itemCount d-inline p-1 m-0 ">0</div>
+      <button type="button" id="${i}" onclick="manipulateVal(this)"
+      class="btn itemsubs m-0 p-1">-</button>
+      </div>
+      </div>
+      </div>`;
+      i++;
+    });
+  }
+}
+
+var billSet = new Set();
+function getId(clickedId) {
+
+  billSet.add(clickedId);
+  var thiscard = document.getElementsByClassName('mainCard')[clickedId].classList.add('border-primary');
+  var Countbtn = document.getElementsByClassName('countFunc')[clickedId].classList.remove('d-none');
+
+}
+
+function manipulateVal(params) {
+  let sign = params.innerText;
+  let id = params.id;
+  let countTxt = parseInt(document.getElementsByClassName('itemCount')[id].innerText);
+  var count;
+  if (sign == '+') {
+    count = countTxt + 1;
+    document.getElementsByClassName('itemCount')[id].innerText = count;
+  } else if (sign == '-') {
+    if (countTxt != 0) {
+      count = countTxt - 1;
+      document.getElementsByClassName('itemCount')[id].innerText = count;
+    }
+  }
+}
+
+var showBill = document.getElementById('printBill');
+showBill.addEventListener('click', () => {
+  document.querySelector('.modal-dynamic').innerHTML = '';
+
+  var arrmrp = [];
+  var arrdp = [];
+  var arrsp = [];
+  billSet.forEach(value => {
+    // console.log(value);
+    var thismrp = parseInt(document.getElementsByClassName('mrp-rate')[value].innerText);
+    var thisdp = parseInt(document.getElementsByClassName('dp-rate')[value].innerText);
+    var thissp = parseFloat(document.getElementsByClassName('sp-count')[value].innerText);
+    var thistitle = document.getElementsByClassName('card-title')[value].innerText.toUpperCase();
+    var thisItemCount = parseInt(document.getElementsByClassName('itemCount')[value].innerText);
+    console.log(thismrp, thisdp, thissp, thistitle, thisItemCount);
+
+    if (thisItemCount != 0) {
+      var content = `<div class="row px-1 ">
+      <div class="col-6 bg-light border py-2">${thistitle} (${thisItemCount})</div>
+      <div class="col-2 mrpval bg-light border py-2">${thismrp}</div>
+      <div class="col-2 dpval bg-light border py-2">${thisdp}</div>
+      <div class="col-2 spval bg-light border py-2">${thissp}</div>
+      </div>`;
+      document.querySelector('.modal-dynamic').innerHTML += content;
+
+      arrmrp.push(thismrp * thisItemCount);
+      arrdp.push(thisdp * thisItemCount);
+      arrsp.push(thissp * thisItemCount);
+    }
+  });
+
+  var totalmrp = arrmrp.reduce((a, b) => {
+    return a + b;
+  }, 0);
+  var totaldp = arrdp.reduce((a, b) => {
+    return a + b;
+  }, 0);
+  var totalsp = arrsp.reduce((a, b) => {
+    return a + b;
+  }, 0);
+  document.getElementById('mrpcalc').innerText = totalmrp;
+  document.getElementById('dpcalc').innerText = totaldp;
+  document.getElementById('spcalc').innerText = totalsp;
+
+
+  var n = new Date().toDateString();
+  document.getElementById('date').innerHTML = n;
+});
+
+
+
+// // signing out user
+function signOutUser() {
+  signOut(auth).then(() => {
+    document.getElementById('signinBtn').style.display = 'block';
+    document.getElementById('loggedinstate').style.display = 'none';
+    alertModal('success', 'Logged Out.');
+    // document.getElementById('loggedinstate').innerHTML = "";
+    setTimeout(() => {
+      location.reload();
+    }, 2500);
+  }).catch((error) => {
+    alertModal('danger', 'could not logout, try again.');
+  });
+}
+
+function alertModal(type, messege) {
+  var alertBody = document.getElementById('alertContainer');
+  var mode;
+  switch (type) {
+    case 'success':
+      mode = 'Success ! ';
+      break;
+    case 'warning':
+      mode = 'Alert ! ';
+      break;
+    case 'danger':
+      mode = 'Alert ! ';
+      break;
+    default:
+      mode = '';
+      break;
+  }
+  alertBody.innerHTML = `
+  <div id="alertContent" class="alert alert-${type} fade show shadow" role="alert">
+      <strong>${mode}</strong>${messege}
+      </div>`;
+  setTimeout(() => {
+    document.getElementById('alertContent').style.display = 'none';
+  }, 2500);
+}
+
+window.getId = getId;
+window.manipulateVal = manipulateVal;
+window.signinUser = signinUser;
+window.alertModal = alertModal;
+window.signOutUser = signOutUser;
+window.changeNavOnUserSignIn = changeNavOnUserSignIn;
+
+

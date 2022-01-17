@@ -47,3 +47,9 @@ button, nav{
   background-color: #28c68149;
   border-radius: 5px;
 }
+.d-none{
+  display: none !important;
+}
+.d-hid{
+  visibility: hidden !important;
+}
