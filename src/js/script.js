@@ -5,9 +5,9 @@ document.getElementById('printimg').addEventListener('click', () => {
     var image = new Image();
     image.src = dataUrl;
     downloadImg(dataUrl, "bill.png");
-  }).then((error) => {
+  }).then(() => {
     alertModal("success", "Your bill is downloaded !");
-  }).catch((error) => {
+  }).catch(() => {
     alertModal("danger", "cannot print bill..! take screenshot!!");
   });
 });
@@ -23,11 +23,9 @@ function downloadImg(url, name) {
 const searchBox = document.querySelector('.searchBox');
 searchBox.addEventListener('input', () => {
   let searchVal = searchBox.value.toLowerCase();
-  // console.log(searchVal);
   let card = document.getElementsByClassName('mainCard');
   Array.from(card).forEach((element) => {
     let cardHead = element.getElementsByTagName('h5')[0].innerText.toLowerCase();
-    // console.log(cardHead.innerText);
     const check = cardHead.includes(searchVal);
     if (check) {
       element.style.display = "block";
@@ -39,12 +37,8 @@ searchBox.addEventListener('input', () => {
 
 
 // firebawe starts here
-
-
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
-import { getFirestore, collection, doc, deleteDoc, Timestamp, updateDoc, getDoc, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { getFirestore, collection, getDocs} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -58,83 +52,23 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
 const database = getFirestore(app);
-const provider = new GoogleAuthProvider();
 
-function signinUser() {
-  signInWithPopup(auth, provider)
-    .then((result) => {
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-      const user = result.user;
-      console.log(user);
-      // ...
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.email;
-      const credential = GoogleAuthProvider.credentialFromError(error);
-      // ...
-    });
-}
 var ProcductContainer = document.getElementById('productsCard');
 
-// // observing if user logged in or not
-onAuthStateChanged(auth, (user) => {
-  window.user = user;
-  //changing navigation ui wrt login state state
-  if (user) {
-    changeNavOnUserSignIn(user);
-    // changeBodyContentOnUserSignIn();
-    // document.getElementById('notSignedIn').style.display = 'none';
-    // document.getElementById('printBill').classList.remove('d-hid');
-  }
-});
 addProductsToBody();
 
 
-
-function changeNavOnUserSignIn(user) {
-  document.getElementById('loggedinstate').innerHTML += ` 
-  <div class="btn-group dropstart">
-      <a style="outline: none;" type="button" class="dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown"
-       aria-expanded="false"><img src="${user.photoURL}" style="width:35px;height:35px;border-radius:50%;border:1px solid green;box-shadow: 0 0 5px rgba(0, 128,   0, 0.658);"
-       alt=""></a>
-
-      <ul style="z-index:9999;" class="dropdown-menu shadow rounded-3">
-      <div class="d-flex flex-column align-items-center">
-      <li><img style="border-radius:50%;border:1px solid green;box-shadow: 0 0 5px rgba(0, 128, 0, 0.658);"
-          class="mt-4 mb-2 mx-5"
-          src="${user.photoURL}"
-          alt=""></li>
-      <li class=" mx-3 mt-2 fw-bold">${user.displayName}</li>
-      <li class="mx-3 mb-2">${user.email}</li>
-      <div class="mt-3" style="border-bottom:2px solid WhiteSmoke;width:100%"></div>
-      <button style="border-top:1px solid gray;" type="button" id="signoutbtn" class="btn mx-2 my-3 btn-success" onClick="signOutUser()">Sign
-      Out</button>
-      <div class="mb-2" style="border-bottom:2px solid WhiteSmoke;width:100%"></div>
-      <li class="mx-3 my-0 py-0 fw-light text-muted">App by <em><a class="text-dark" href="https://github.com/AyushBawane">Ayush Bawane</a></em>.</li>
-    </div>
-  </ul>
-</div>`;
-  // document.getElementById('signinBtn').style.display = 'none';
-}
-
 async function addProductsToBody() {
-  // if (user) {
   const querySnapshot = await getDocs(collection(database, `/products`));
   var i = 0;
   querySnapshot.forEach((doc) => {
-    var transId = doc.id;
     var data = doc.data();
-
     var name = data.name;
     var image = data.imageURL;
     var mrp = data.mrp;
     var dp = data.dp;
     var sp = data.sp;
-    var cat = data.category;
     ProcductContainer.innerHTML += `
       <div class="card m-2 mainCard" style="width: 18rem;">
       <img src="${image}" class="card-img-top" alt="...">
@@ -162,15 +96,14 @@ async function addProductsToBody() {
       </div>`;
     i++;
   });
-  // }
 }
 
 var billSet = new Set();
 function getId(clickedId) {
 
   billSet.add(clickedId);
-  var thiscard = document.getElementsByClassName('mainCard')[clickedId].classList.add('border-primary');
-  var Countbtn = document.getElementsByClassName('countFunc')[clickedId].classList.remove('d-none');
+  document.getElementsByClassName('mainCard')[clickedId].classList.add('border-primary');
+  document.getElementsByClassName('countFunc')[clickedId].classList.remove('d-none');
 
 }
 
@@ -193,12 +126,10 @@ function manipulateVal(params) {
 var showBill = document.getElementById('printBill');
 showBill.addEventListener('click', () => {
   document.querySelector('.modal-dynamic').innerHTML = '';
-
   var arrmrp = [];
   var arrdp = [];
   var arrsp = [];
   billSet.forEach(value => {
-    // console.log(value);
     var thismrp = parseInt(document.getElementsByClassName('mrp-rate')[value].innerText);
     var thisdp = parseInt(document.getElementsByClassName('dp-rate')[value].innerText);
     var thissp = parseFloat(document.getElementsByClassName('sp-count')[value].innerText);
@@ -234,27 +165,9 @@ showBill.addEventListener('click', () => {
   document.getElementById('dpcalc').innerText = totaldp;
   document.getElementById('spcalc').innerText = totalsp;
 
-
   var n = new Date().toDateString();
   document.getElementById('date').innerHTML = n;
 });
-
-
-
-// // signing out user
-function signOutUser() {
-  signOut(auth).then(() => {
-    document.getElementById('signinBtn').style.display = 'block';
-    document.getElementById('loggedinstate').style.display = 'none';
-    alertModal('success', 'Logged Out.');
-    // document.getElementById('loggedinstate').innerHTML = "";
-    setTimeout(() => {
-      location.reload();
-    }, 2500);
-  }).catch((error) => {
-    alertModal('danger', 'could not logout, try again.');
-  });
-}
 
 function alertModal(type, messege) {
   var alertBody = document.getElementById('alertContainer');
@@ -284,9 +197,6 @@ function alertModal(type, messege) {
 
 window.getId = getId;
 window.manipulateVal = manipulateVal;
-window.signinUser = signinUser;
 window.alertModal = alertModal;
-window.signOutUser = signOutUser;
-window.changeNavOnUserSignIn = changeNavOnUserSignIn;
 
 
