@@ -87,11 +87,11 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     changeNavOnUserSignIn(user);
     // changeBodyContentOnUserSignIn();
-    addProductsToBody();
-    document.getElementById('notSignedIn').style.display = 'none';
-    document.getElementById('printBill').classList.remove('d-hid');
+    // document.getElementById('notSignedIn').style.display = 'none';
+    // document.getElementById('printBill').classList.remove('d-hid');
   }
 });
+addProductsToBody();
 
 
 
@@ -118,24 +118,24 @@ function changeNavOnUserSignIn(user) {
     </div>
   </ul>
 </div>`;
-  document.getElementById('signinBtn').style.display = 'none';
+  // document.getElementById('signinBtn').style.display = 'none';
 }
 
 async function addProductsToBody() {
-  if (user) {
-    const querySnapshot = await getDocs(collection(database, `/products`));
-    var i = 0;
-    querySnapshot.forEach((doc) => {
-      var transId = doc.id;
-      var data = doc.data();
+  // if (user) {
+  const querySnapshot = await getDocs(collection(database, `/products`));
+  var i = 0;
+  querySnapshot.forEach((doc) => {
+    var transId = doc.id;
+    var data = doc.data();
 
-      var name = data.name;
-      var image = data.imageURL;
-      var mrp = data.mrp;
-      var dp = data.dp;
-      var sp = data.sp;
-      var cat = data.category;
-      ProcductContainer.innerHTML += `
+    var name = data.name;
+    var image = data.imageURL;
+    var mrp = data.mrp;
+    var dp = data.dp;
+    var sp = data.sp;
+    var cat = data.category;
+    ProcductContainer.innerHTML += `
       <div class="card m-2 mainCard" style="width: 18rem;">
       <img src="${image}" class="card-img-top" alt="...">
       <div class="card-body text-center">
@@ -160,9 +160,9 @@ async function addProductsToBody() {
       </div>
       </div>
       </div>`;
-      i++;
-    });
-  }
+    i++;
+  });
+  // }
 }
 
 var billSet = new Set();
